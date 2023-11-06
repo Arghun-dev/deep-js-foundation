@@ -22,3 +22,20 @@ var y = "5";
 y++;    // 5    --> this goes ahead and coerce the "5" to a number first and then increments it 
 y;      // 6
 ```
+
+
+### ++ Definition
+
+```js
+// x++ means:
+
+function plusplus(x) {
+  const coercedX = Number(x);
+  x = coercedX + 1;
+  return coercedX;
+}
+
+var x = "5";
+plusplus(x);  // 5
+x;            // 6
+```
