@@ -75,3 +75,5 @@ in JavaScript `NaN` is the only value that is not equal to itself.
 ```js
 NaN === NaN     // false
 ```
+
+`isNaN` always coerce the value inside of the the function to a number and then see if it is nan or not.
