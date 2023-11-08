@@ -65,3 +65,7 @@ x;            // 6
   . class {}
   . Prototypes
   . OO vs. OLOO
+
+`object`, `function`, `array` -> objects
+
+`undfined`, `string`, `number`, `null`, `boolean`, `symbol` not object
