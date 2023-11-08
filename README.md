@@ -81,3 +81,43 @@ NaN === NaN     // false
 ```js
 typeof NaN      // number
 ```
+
+
+### Object.is
+
+The `Object.is()` static method determines whether two values are the same value
+
+```js
+// Case 1: Evaluation result is the same as using ===
+Object.is(25, 25); // true
+Object.is("foo", "foo"); // true
+Object.is("foo", "bar"); // false
+Object.is(null, null); // true
+Object.is(undefined, undefined); // true
+Object.is(window, window); // true
+Object.is([], []); // false
+const foo = { a: 1 };
+const bar = { a: 1 };
+const sameFoo = foo;
+Object.is(foo, foo); // true
+Object.is(foo, bar); // false
+Object.is(foo, sameFoo); // true
+
+// Case 2: Signed zero
+Object.is(0, -0); // false
+Object.is(+0, -0); // false
+Object.is(-0, -0); // true
+
+// Case 3: NaN
+Object.is(NaN, 0 / 0); // true
+Object.is(NaN, Number.NaN); // true
+```
+
+example:
+
+```js
+function formatTrend(trendRate) {
+  var direction = (direction < 0 || Object.is(trendRate, -0)) ? "decreasing" : "increasing";
+  return `${direction} ${Math.abs(trenRate)}`;
+}
+```
