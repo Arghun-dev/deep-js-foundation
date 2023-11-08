@@ -69,3 +69,9 @@ x;            // 6
 `object`, `function`, `array` -> objects
 
 `undfined`, `string`, `number`, `null`, `boolean`, `symbol` not object
+
+in JavaScript `NaN` is the only value that is not equal to itself.
+
+```js
+NaN === NaN     // false
+```
