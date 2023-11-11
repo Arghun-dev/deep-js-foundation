@@ -209,3 +209,8 @@ Prefrer the `more powerful` == or `don't compare` at all.
 Summary: if you `can't or won't` use known and obvious types, `===` is the only `reasonable` choice. But it's better you to `know` the types.
 
 Even if `===` would always be equivalent to `==` in your code, using it `everywhere` sends a wrong semantic signal: `Protecting myself since I don't know/trust the types`
+
+
+**In Conclusion**
+
+Making types known and obvious leads to better code. If types are known, `==` is best. Otherwise, fallback to `===`
