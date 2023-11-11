@@ -1,5 +1,11 @@
 # deep-js-foundation
 
+PDF of the course:
+[deep-js-foundations-v2.pdf](https://github.com/Arghun-dev/deep-js-foundation/files/13325704/deep-js-foundations-v2.pdf)
+
+
+
+
 ```js
 var x = 40;
 
@@ -22,7 +28,6 @@ var y = "5";
 y++;    // 5    --> this goes ahead and coerce the "5" to a number first and then increments it 
 y;      // 6
 ```
-
 
 ### ++ Definition
 
