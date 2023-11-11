@@ -214,3 +214,9 @@ Even if `===` would always be equivalent to `==` in your code, using it `everywh
 **In Conclusion**
 
 Making types known and obvious leads to better code. If types are known, `==` is best. Otherwise, fallback to `===`
+
+
+
+# Scope
+
+Scope: Where to llok for things
