@@ -181,3 +181,26 @@ Don't use `new`:
 1. == with 0 or "" (or even "  ")
 2. == with non-primitive
 3. == true or == false: allow to Boolean or use ===
+
+
+### The case for preferring ==
+
+You should prefer == in all possible cases 
+
+Knowing types is always bettern than not knowing them.
+
+Static Types is `not` the only (or even necessarily best) way to know your types
+
+`==` is `not` about comparison with unkown types => `Never` use the `==` when you don't know the types. Only use the `==` when you know the types.
+
+`==` is about comparisons with known types, `optionally` where conversions are helpful.
+
+
+Since === is pointless when the types don't match. => It's similarly `unnecessary` when they do match.
+
+
+If you `know` the types in a comparison:
+
+If the types are different, using one === would be broken.
+
+Prefrer the `more powerful` == or `don't compare` at all.
