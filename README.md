@@ -204,3 +204,6 @@ If you `know` the types in a comparison:
 If the types are different, using one === would be broken.
 
 Prefrer the `more powerful` == or `don't compare` at all.
+
+
+Summary: if you `can't or won't` use known and obvious types, `===` is the only `reasonable` choice. But it's better you to `know` the types.
