@@ -174,3 +174,10 @@ Don't use `new`:
   . String()
   . Number()
   . Boolean()
+
+
+### Avoid these:
+
+1. == with 0 or "" (or even "  ")
+2. == with non-primitive
+3. == true or == false: allow to Boolean or use ===
